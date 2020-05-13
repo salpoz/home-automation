@@ -10,7 +10,7 @@
   <body>
     <div class="jumbotron mybg">
       <div class="container">
-        <h1><%= hello %></h1>
+        <h1>Simple home-automation project</h1>
         <small class="text-muted">Designed by Salaam</small>
       </div>
     </div>
@@ -28,8 +28,11 @@
             </div>
           </div>
           <div class="col-sm-4 myCenter">
-            <button type="button" class="btn btn-primary">ON</button>
-            <button type="button" class="btn btn-secondary">OFF</button>
+            <p><%= pstatus %></p>
+            <form action="/" method="post">
+              <button type="submit" name="button" class="btn btn-primary" value="on">ON</button>
+              <button type="submit" name="button" class="btn btn-secondary" value="off">OFF</button>
+            </form>
           </div>
         </div>
       </div>
